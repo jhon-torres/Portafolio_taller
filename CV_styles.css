@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+
+/* Variables */
+:root{
+    --primary:#ffffffac;
+    --secondary: #008080;
+    --portfolio: #d4d3d369;
+}
+
+
+/* Global styles */
+* {
+	margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* styles to BODY  */
+body {
+    font-family: 'Lato', sans-serif;
+	line-height: 1.5;
+}
+
+/* styles to HTML  */
+html {
+    scroll-behavior: smooth;
+}
+
+/* styles to BODY  */
+body {
+    font-family: 'Lato', sans-serif;
+	line-height: 1.5;
+}
+
+/* styles to HTML  */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Start of HEADER styles */
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(-20deg, #243b37f5 0%, #615130c0 100%), url('./images/showcase.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    color: var(--primary);
+}
+
+.pdf {
+    margin-top: 2em;
+    margin-left: 150px;
+    width: 80%;
+    height: 70vh;
+}
+
+.showcase{
+    /* border: 1px solid blue; */
+    width: 80%;
+    
+    margin: 0 auto;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase-box h1 {
+    margin-bottom: 1.5em;
+}
+
+.btn {
+    display: block;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+    text-align: center;
+	padding: .5em 1.5em;
+	cursor: pointer;
+	font-weight: 500;
+	letter-spacing: 1px;
+	border-radius: 50px;
+}
+.btn-light {
+    width: 50%;
+    margin:0 auto;
+	background: var(--secondary);
+	border: .2em solid var(--primary);
+    justify-content: center;
+	color: var(--primary);
+}
+.btn-light:hover {
+    background: #000000c5;
+	border: .2em solid var(--secondary);
+	color: var(--secondary);
+    transition: all 0.8s;
+}
+/* End of HEADER styles */
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    
+    /* Start of HEADER styles */
+    .pdf {
+        margin-left: 20px;
+        width: 330px;
+
+    }
+
+    .showcase-box h1 {
+        margin-top: 2em;
+        font-size: 2rem;
+        text-align: center;
+        
+    }
+    .showcase-box a {
+        margin-top: 5rem;
+        font-size: 1rem;
+        text-align: center;
+        
+    }
+    .btn-light {
+        width: 80%;
+        margin-bottom: 3em;
+    }
+    .header {
+        height: auto;
+        width: 100%;
+    }
+}
+    /* End of HEADER styles */

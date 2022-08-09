@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
 
@@ -7,10 +6,11 @@
     --primary:#ffffffac;
     --secondary: #008080;
     --portfolio: #d4d3d369;
+    --colorTextos: #49454567;
 }
 
 
-/* Glabal styles */
+/* Global styles */
 * {
 	margin: 0;
     padding: 0;
@@ -30,12 +30,18 @@ html {
     scroll-behavior: smooth;
 }
 
-/* ------------IMPLEMENTACION PSEUDO ELEMENTO ::selection */
-/* ::selection{
-    color: white;
-    background-color: aqua;
-} */
-/* ---------------------------------------------- */
+/* styles to BODY  */
+body {
+    font-family: 'Lato', sans-serif;
+	line-height: 1.5;
+}
+
+/* styles to HTML  */
+html {
+    scroll-behavior: smooth;
+}
+
+
 
 /* Start of HEADER styles */
 .header{
@@ -66,6 +72,10 @@ html {
     font-weight: 900;
     text-decoration: underline;
 }
+.container .menu {
+    display: flex;
+    /* border: 1px solid yellow; */
+}
 .menu a {
     color: var(--primary);
     font-size: 1.5rem;
@@ -75,21 +85,10 @@ html {
     color: var(--secondary);
     text-decoration: underline;
 }
-.container .menu {
-    display: flex;
-    /* border: 1px solid yellow; */
-}
 .menu li {
     margin: 0 1rem;
+    font-size: 1.5rem;
 }
-
-/* --------------------IMPLEMENTACION PSEUDO ELEMENTO ::marker*/
-/* ::marker{
-    color: var(--secondary);
-    font-size: 20px;
-} */
-/* 1--------------------------------------------------8 */
-
 .showcase{
     /* border: 1px solid blue; */
     width: 80%;
@@ -121,6 +120,7 @@ html {
     margin:0 auto;
 	background: var(--secondary);
 	border: .2em solid var(--primary);
+    justify-content: center;
 	color: var(--primary);
 }
 .btn-light:hover {
@@ -158,19 +158,6 @@ html {
     line-height: 1.5;
     margin-bottom: 1.5rem;
 }
-
-/* ----- IMPLEMENTACION PSEUDO ELEMENTO ::first-letter ::first-line */
-/* .about__paragraph::first-letter{
-    font-size: 45px;
-    font-weight: 725;
-    color: var(--secondary);
-} */
-/* .about__paragraph::first-line{
-    font-size: 17px;
-    text-transform: uppercase;
-} */
-/* ---------------------------------------------------------- */
-
 .about__img{
     width: 50%;
     text-align: center;
@@ -202,7 +189,6 @@ html {
     background: var(--portfolio);
     margin-top: 4rem;
 }
-
 .portfolio .title {
     text-align: center;
 }
@@ -269,78 +255,37 @@ html {
 .languages__picture{
     width: 20%;
     height: 100px;
-    display: block;
     /* border: 1px solid red; */
 }
 /* End of LANGUAGES styles */
 
-/* Start of TESTIMONIALS */
-.testimonials{
+/* Start of CERTIFICATES styles */
+
+.certificates {
     background: var(--portfolio);
+    
 }
 
-.testimonials__cards{
-    display: flex;
-    padding: 1em;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    /* border: 1px solid red; */
-}
-
-.testimonial__card{
-    width: 30%;
-    height: 30%;
-    background: var(--primary);
-    box-shadow: 0 0 12px rgba(0,0,0, .2);
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 30px 0;
-    padding: 25px;
-    /* border: 1px solid blue; */
-}
-
-.testimonial {
-    width: 100%;
-    display: flex;
-}
-
-.testimonial__paragraph, .testimonial__person{
+.certificates_container img {
     display: block;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    width: 90%;
+    height: auto; 
+}
+
+.certificates_container h2 {
     text-align: center;
 }
 
-/* --------------------IMPLEMENTACION PSEUDO ELEMENTO ::before */
-/* .testimonial__paragraph::before {
-    content: "\201C";
-    font-family: Arial,sans-serif;
-    color: var(--secondary);
-    font-weight: bold;
-    font-size: 68px;
-    line-height: 54px;
-    position: relative;
-    left: 0;
-    top: 0;
-} */
-/* .testimonial__person::after{
-    content: " 💻";
-    font-family: Arial,sans-serif;
-    font-size: 20px;
-} */
-/* ------------------------------------------------------ */
+/* End of CERTIFICATES styles */
 
-.testimonial__card img{
-    margin: 20px auto;
-    border-radius: 50%;
-    width: 40%;
-    height: 40%;
-    display: block;
-    object-fit: cover;
-}
-/* End of TESTIMONIALS */
+/* Start of FORM CONTACT styles */
 
-/* Start of FORM styles */
-.form__card{
+.contact{
     margin: 0 auto;
+    margin-top: 3em;
+    padding: 10px 0;
     width: 70%;
     display: flex;
     justify-content: center;
@@ -348,54 +293,98 @@ html {
     box-shadow: 0 0 12px rgba(0,0,0, .2);
     border-left: 50px solid var(--secondary);
     border-radius: 15px 5px 5px 15px;
+    margin-bottom: 4em;
 }
 
-.form-group{
-    margin: 30px auto;
+.container_contact h2 {
+    margin-left: 1.2em;
+}
+
+.container_contact{
     width: 100%;
+    margin: auto;
+    
 }
 
-label, input{
-    display: block;
-    margin-bottom: 10px;
+.container_contact > .form_group{
+    position: relative;
+    margin: 45px;
 }
 
-/* -----------IMPLEMENTACION PSUEDO ELEMENTO ::placeholder */
-/* input::placeholder, textarea::placeholder{
-    padding: 10px;
-    color: var(--secondary);
-    opacity: 0.4;
-} */
-/* --------------------------------------------------------- */
-
-label{
-    font-size: 1.25rem;
-    color: rgb(105, 102, 97);
-}
-
-.form-camp{
-    width: 100%;
-    height: 30px;
-}
-
-.form-camp:focus, .form-text {
-    border: 3px solid var(--secondary);
-}
-
-.btn-form {
+.btn_form {
     width: 100%;
     margin: .5em;
 	background: var(--secondary);
-	border: .2em solid var(--primary);
+	border: .2em solid var(--portfolio);
 	color: var(--primary);
 }
-.btn-form:hover {
+.btn_form:hover {
     background: #000000e3;
 	border: .2em solid var(--secondary);
 	color: var(--secondary);
     transition: all 0.8s;
 }
-/* End of FORM styles */
+
+input, textarea {
+    background: none;
+    color: var(--secondary);
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid var(--portfolio);
+    resize: none;
+}
+
+input:focus,textarea:focus{
+    outline: none;
+    color: rgb(94,93,93);
+}
+
+input:focus~label, 
+input:valid~label, 
+textarea:focus~label, textarea:valid~label{
+    position: absolute;
+    top: -22px;
+    font-size: 1.5em;
+    color: var(--secondary);
+    font-weight: 900;
+}
+
+label{
+    color: var(--colorTextos);
+    font-size: 1em;
+    position: absolute;
+    left: 5px;
+    top:10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+
+input:focus~.barra::before, textarea:focus~.barra::before{
+    width: 100%;
+}
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.barra::before{
+    content: '';
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, var(--portfolio), var(--secondary));
+    transition: 0.3s ease all;
+    left: 0%;
+}
+
+/* End of FORM CONTACT styles */
+
+
 
 /* Start of FOOTER styles */
 .footer{
@@ -469,7 +458,7 @@ label{
 
 /* Media queries */
 @media screen and (max-width: 768px) {
-
+    
     /* Start of HEADER styles */
     .navbar .container {
         display: flex;
@@ -477,25 +466,41 @@ label{
         align-items: center;
         row-gap: 1.5rem;
     }
+    ul.menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
     .menu a {
         color: var(--primary);
-        font-size: .9rem;
+        font-size: 1.1rem;
     }
     .menu li {
         margin-left: 1rem;
     }
+
     .showcase-box h1 {
         font-size: 2rem;
         text-align: center;
+        
+    }
+    .showcase-box a {
+        margin-top: 8rem;
+        font-size: 1rem;
+        text-align: center;
+        
     }
     .btn-light {
         width: 100%;
     }
+    .header {
+        height: auto;
+    }
 
     /* End of HEADER styles */
 
-
-
+    
     /* Start of ABOUT styles */
     .about__texts{
         width: 100%;
@@ -539,35 +544,6 @@ label{
     }
     /* End of LANGUAGES styles */
 
-    /* Start of TESTIMONIALS styles */
-    .testimonials__cards{
-        row-gap: 2rem;
-    }
-    .testimonial__card{
-        width: 70%;
-    }
-    .portfolio__texts .btn {
-        font-size: .8rem;
-    }
-    .btn-portfolio {
-        margin-bottom: 1em;
-    }
-    /* End of TESTIMONIALS styles */
-
-    /* Start of FORM styles */
-    .form__card__container{
-        row-gap: 2rem;
-    }
-    .form__card{
-        width: 95%;
-    }
-    .form-group .btn {
-        font-size: .8rem;
-    }
-    .btn-form {
-        margin-bottom: 1em;
-    }
-    /* End of FORM styles */
 
     /* Start of FOOTER styles */
     .footer__texts{
@@ -580,3 +556,34 @@ label{
     /* End of FOOTER styles */
 
 }
+
+/* START FORM CONTACT MEDIA QUERIE */
+
+@media screen and (max-width:1100px){
+    .contact_container{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .contact_container{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:450px){
+    .contact_container{
+        width: 80%;
+    }
+    .container_contact h2 {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width:300px){
+    .contact_container{
+        width: 90%;
+    }
+}
+
+/* END FORM CONTACT MEDIA QUERIE */
