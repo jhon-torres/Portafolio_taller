@@ -30,7 +30,12 @@ html {
     scroll-behavior: smooth;
 }
 
-
+/* ------------IMPLEMENTACION PSEUDO ELEMENTO ::selection */
+/* ::selection{
+    color: white;
+    background-color: aqua;
+} */
+/* ---------------------------------------------- */
 
 /* Start of HEADER styles */
 .header{
@@ -77,6 +82,14 @@ html {
 .menu li {
     margin: 0 1rem;
 }
+
+/* --------------------IMPLEMENTACION PSEUDO ELEMENTO ::marker*/
+/* ::marker{
+    color: var(--secondary);
+    font-size: 20px;
+} */
+/* 1--------------------------------------------------8 */
+
 .showcase{
     /* border: 1px solid blue; */
     width: 80%;
@@ -145,6 +158,19 @@ html {
     line-height: 1.5;
     margin-bottom: 1.5rem;
 }
+
+/* ----- IMPLEMENTACION PSEUDO ELEMENTO ::first-letter ::first-line */
+/* .about__paragraph::first-letter{
+    font-size: 45px;
+    font-weight: 725;
+    color: var(--secondary);
+} */
+/* .about__paragraph::first-line{
+    font-size: 17px;
+    text-transform: uppercase;
+} */
+/* ---------------------------------------------------------- */
+
 .about__img{
     width: 50%;
     text-align: center;
@@ -176,6 +202,7 @@ html {
     background: var(--portfolio);
     margin-top: 4rem;
 }
+
 .portfolio .title {
     text-align: center;
 }
@@ -282,7 +309,8 @@ html {
     text-align: center;
 }
 
-.testimonial__paragraph::before {
+/* --------------------IMPLEMENTACION PSEUDO ELEMENTO ::before */
+/* .testimonial__paragraph::before {
     content: "\201C";
     font-family: Arial,sans-serif;
     color: var(--secondary);
@@ -292,7 +320,13 @@ html {
     position: relative;
     left: 0;
     top: 0;
-}
+} */
+/* .testimonial__person::after{
+    content: " 💻";
+    font-family: Arial,sans-serif;
+    font-size: 20px;
+} */
+/* ------------------------------------------------------ */
 
 .testimonial__card img{
     margin: 20px auto;
@@ -325,6 +359,14 @@ label, input{
     display: block;
     margin-bottom: 10px;
 }
+
+/* -----------IMPLEMENTACION PSUEDO ELEMENTO ::placeholder */
+/* input::placeholder, textarea::placeholder{
+    padding: 10px;
+    color: var(--secondary);
+    opacity: 0.4;
+} */
+/* --------------------------------------------------------- */
 
 label{
     font-size: 1.25rem;
