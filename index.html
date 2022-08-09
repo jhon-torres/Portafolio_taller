@@ -26,19 +26,19 @@
 
 <body>
 
-	<!-- HEADER SECTION SATRTS -->
+	<!-- HEADER SECTION STARTS -->
 	<header class="header">
 
 		<nav class="navbar">
 			<div class="container">
-				<div class="logo">Byrontosh</div>
+				<div class="logo">Felipe Pazmiño</div>
 				<ul class="menu">
 					<li><a href="#navbar">Home</a></li>
 					<li><a href="#portfolio">Portfolio</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#expert">Expert</a></li>
-					<li><a href="#testimonials">Testimonials</a></li>
 					<li><a href="#contact">Contact</a></li>
+					<li><a href="#certificates">Certificates</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -65,11 +65,11 @@
 		<!-- ABOUT SECTION STARTS  -->
 		<section class="about container" id="about">
 			<div class="about__texts">
-				<h2 class="title">¿Quién soy?</h2>
+				<h2 class="title">About me?</h2>
 				<p class="about__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio exercitationem
 					accusamus laudantium aliquam, voluptatem nobis numquam, eos neque perferendis quisquam laboriosam
 					natus architecto harum, dolorem autem at cupiditate dolore consequuntur.</p>
-				<a href="#" class="btn btn-about">curriculum vitae</a>
+				<a href="./CV.html" class="btn btn-about">curriculum vitae</a>
 			</div>
 			<figure class="about__img">
 				<img src="./images/girl.svg" class="about__picture" alt="chica-code">
@@ -137,95 +137,54 @@
 		</section>
 		<!-- LANGUAGES SECTION ENDS  -->
 
-		<!-- TESTIMONIALS SECTION STARTS -->
-		<section class="testimonials" id="testimonials">
-			<div class="testimonials__container container">
-
-				<h2 class="title">Testimonials</h2>
-				<div class="testimonials__cards">
-					<div class="testimonial__card">
-						<div class="testimonial">
-							<p class="testimonial__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Minus tempore voluptatem quis in eaque obcaecati optio impedit numquam ex quos.
-
-							</p>
-						</div>
-						<img src="./images/face_testim.jpg" alt="">
-						<p class="testimonial__person">Mark Smith - Web Developer</p>
-					</div>
-					<div class="testimonial__card">
-						<div class="testimonial">
-							<p class="testimonial__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Minus tempore voluptatem quis in eaque obcaecati optio impedit numquam ex quos.
-								
-							</p>
-						</div>
-						<img src="./images/face_testim1.jpg" alt="">
-						<p class="testimonial__person">Josue White - UX Analyst</p>
-					</div>	
-					<div class="testimonial__card">
-						<div class="testimonial">
-							<p class="testimonial__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Minus tempore voluptatem quis in eaque obcaecati optio impedit numquam ex quos.
-								
-							</p>
-						</div>
-						<img src="./images/face_testim2.jpg" alt="">
-						<p class="testimonial__person">Antonio Holz - Media Analyst</p>
-					</div>
-					<div class="testimonial__card">
-						<div class="testimonial">
-							<p class="testimonial__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Minus tempore voluptatem quis in eaque obcaecati optio impedit numquam ex quos.
-
-							</p>
-						</div>
-						<img src="./images/face_testim.jpg" alt="">
-						<p class="testimonial__person">Mark Smith - Web Developer</p>
-					</div>			
+		<!-- CERTIFICATES SECTION STARTS -->
+		<section class="certificates" id="certificates">
+			<div class="container">
+				<div class="certificates_container">
+					<h2 class="title">Certificates</h2>
+					<img src="./images/diploma-basico-programacion_page-0001.jpg" alt="Certificado Programacion">
 				</div>
-			</div>
+		</div>
 		</section>
-		<!-- TESTIMONIALS SECTION END -->
+		<!-- CERTIFICATES SECTION ENDS -->
 
-		<!-- FORM SECTION STARTS -->
-		<section class="form__contact"  id="contact">
-			<div class="form__contact__container container">
-				<h2 class="title">Contact</h2>
-				<div class="form__card">
-					<form method="POST" id="contactForm" name="contactForm" class="contactForm">
-						
-						<div class="form-group">
-							<label class="label" for="name">Full Name</label>
-							<input type="text" class="form-camp" name="name" id="name" placeholder="Name">
+		<!-- FORM CONTACT SECTION STARTS -->
+		<section class="contact" id="contact">
+			<form method="POST" id="contact_form" name="Contact Form" class="form_contact_container"></form>
+				<div class="container">
+					<div class="container_contact">
+						<h2 class="title">Contact</h2>
+						<div class="form_group">
+							<input class="form_camp" type="text" name="name" id="name" required><span class="barra"></span>
+							<label >Name</label>
+							
 						</div>
-	
-						<div class="form-group">
-							<label class="label" for="email">Email Address</label>
-							<input type="email" class="form-camp" name="email" id="email" placeholder="Email">
+
+						<div class="form_group">
+							<input class="form_camp" type="email" name="email" id="email"  required><span class="barra"></span>
+							<label >Email</label>
 						</div>
-	
-						<div class="form-group">
-							<label class="label" for="subject">Subject</label>
-							<input type="text" class="form-camp" name="subject" id="subject" placeholder="Subject">
+
+						<div class="form_group">
+							<input class="form_camp" type="number" name="" id="" required><span class="barra"></span>
+							<label>Age</label>
 						</div>
-	
-						<div class="form-group">
-							<label class="label" for="#">Message</label>
-							<textarea name="message" class="form-text" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+
+						<div class="form_group">
+							<textarea class="form_text" name="message" id="message" cols="30" rows="4"  required></textarea><span class="barra"></span>
+							<label >Message</label>
 						</div>
-	
-						<div class="form-group">
-							<input type="submit" value="Send Message" class="btn btn-form">
+
+						<div class="form_group">
+							<input class="btn btn_form" type="submit" value="Send Message"><span class="barra"></span>
 							<div class="submitting"></div>
 						</div>
 						
-					</form>
-				</div>
+					</div>
 			</div>
+			</section>
 		</section>
-		<!-- FORM SECTION STARTS -->
-		
+
 
 	</main>
 	<!-- MAIN SECTION ENDS  -->
@@ -233,12 +192,12 @@
 
 
 	<!-- FOOTER SECTION STARTS  -->
-	<footer class="footer">
+	<footer class="footer" id="social_media">
 		
 		<div class="footer__container container">
 			
 			<div class="footer__texts">
-				<h2 class="title">Social Media</h2>
+				<h2 class="title">SOCIAL MEDIA</h2>
 				<div class="footer__icons">
 					<a href="#" class="footer__icon fab fa-facebook-f"></a>
 					<a href="#" class="footer__icon fab fa-twitter"></a>
@@ -249,7 +208,7 @@
 					<a href="#about" class="footer__link">Sobre mí</a>
 					<a href="#portfolio" class="footer__link">Proyectos</a>
 				</nav>
-				<p class="footer__copy">Derechos reservados &copy; ByronTosh</p>
+				<p class="footer__copy">Derechos reservados &copy; Felipe Pazmiño</p>
 			</div>
 
 			<figure class="footer__img">
@@ -257,7 +216,7 @@
 			</figure>
 		</div>
 	</footer>
-	<!-- FOOTER SECTION STARTS  -->
+	<!-- FOOTER SECTION ENDS  -->
 
 </body>
 
