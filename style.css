@@ -1,0 +1,69 @@
+
+/*PSEUDOCLASE HOVER*/
+
+.hover {
+  background: yellow;
+  width: 300px;
+  height: 100px;
+  transition: all 3s;
+}
+
+.hover:hover {
+  background: blue;
+  border-radius: 20px;
+}
+
+/*PSEUDOCLASE first-child */
+div p:first-child {
+  text-align: center;
+  color: red;
+  text-decoration: underline;
+}
+
+p {
+  background-color: white;
+  color: black;
+}
+
+/*PSEUDOCLASE link y visited */
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: green;
+  background-color: red;
+  border-color: black;
+}
+
+/*PSEUDOCLASE active */
+
+h1:active {
+  background-color: black;
+  color: white;
+}
+
+/*PSEUDOCLASE focus */
+input:focus {
+  border: 6px solid red;
+  padding: 2px;
+}
+
+/*PSEUDOCLASE valud, invalid */
+
+.correo:invalid {
+  background: blue;
+}
+
+.correo:valid {
+  background: gold;
+}
+
+/*PSEUDOCLASE requerid*/
+
+div .requerido:requerid {
+  background: yellow;
+  border: none;
+}
+
+
